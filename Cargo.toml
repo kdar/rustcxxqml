@@ -1,0 +1,12 @@
+[package]
+name = "rustcxxqml"
+build = "build.rs"
+version = "0.0.1"
+authors = ["Kevin Darlington <kevin@outroot.com>"]
+
+[dependencies]
+rustcxx_plugin = { git = "https://github.com/google/rustcxx.git" }
+
+[build-dependencies.rustcxx_codegen]
+git = "https://github.com/google/rustcxx.git"
+features = ["gcc"]
